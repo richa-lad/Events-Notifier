@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "events-notifier"
+version = "0.1.0"
+description = "app that notifies you about events at a local venue"
+authors = ["Richa Lad <richa_lad@outlook.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = "^2.31.0"
+beautifulsoup4 = "^4.12.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
