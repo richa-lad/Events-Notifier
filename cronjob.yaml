@@ -1,0 +1,16 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: events-notifier
+spec:
+  schedule: "0 9 * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: events-notifier
+            image: events-notifier
+            imagePullPolicy: IfNotPresent
+            resources: {}
+          restartPolicy: OnFailure
